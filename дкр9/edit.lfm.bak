@@ -1,0 +1,144 @@
+object fEdit: TfEdit
+  Left = 178
+  Height = 425
+  Top = 254
+  Width = 425
+  BorderStyle = bsDialog
+  Caption = 'Редактор контакта'
+  ClientHeight = 425
+  ClientWidth = 425
+  Constraints.MaxHeight = 425
+  Constraints.MaxWidth = 425
+  Constraints.MinHeight = 425
+  Constraints.MinWidth = 425
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.0.0.3'
+  object Label1: TLabel
+    Left = 16
+    Height = 20
+    Top = 8
+    Width = 219
+    Caption = 'Укажите наименование товара'
+  end
+  object eName: TEdit
+    Left = 16
+    Height = 28
+    Top = 32
+    Width = 380
+    Constraints.MaxWidth = 380
+    Constraints.MinWidth = 380
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 20
+    Top = 72
+    Width = 221
+    Caption = 'Укажите цену товара (в рублях)'
+  end
+  object ePrice: TEdit
+    Left = 16
+    Height = 28
+    Top = 96
+    Width = 380
+    Constraints.MaxWidth = 380
+    Constraints.MinWidth = 380
+    NumbersOnly = True
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 20
+    Top = 136
+    Width = 169
+    Caption = 'Укажите производителя'
+  end
+  object bSave: TBitBtn
+    Left = 15
+    Height = 30
+    Top = 360
+    Width = 170
+    Caption = 'Сохранить товар'
+    Constraints.MaxHeight = 30
+    Constraints.MaxWidth = 170
+    Constraints.MinHeight = 30
+    Constraints.MinWidth = 170
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object bCancel: TBitBtn
+    Left = 232
+    Height = 30
+    Top = 360
+    Width = 160
+    Cancel = True
+    Caption = 'Не сохранять'
+    Constraints.MaxHeight = 30
+    Constraints.MaxWidth = 160
+    Constraints.MinHeight = 30
+    Constraints.MinWidth = 160
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object eMaker: TEdit
+    Left = 16
+    Height = 28
+    Top = 168
+    Width = 380
+    Constraints.MaxWidth = 380
+    Constraints.MinWidth = 380
+    TabOrder = 4
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 20
+    Top = 208
+    Width = 255
+    Caption = 'Укажите  наличие на складе (да/нет)'
+  end
+  object CBNote: TComboBox
+    Left = 16
+    Height = 28
+    Top = 240
+    Width = 125
+    ItemHeight = 20
+    ItemIndex = 0
+    Items.Strings = (
+      'да'
+      'нет'
+    )
+    TabOrder = 5
+    Text = 'да'
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 20
+    Top = 280
+    Width = 188
+    Caption = 'Укажите категорию товара'
+  end
+  object eCategory: TComboBox
+    Left = 16
+    Height = 28
+    Top = 312
+    Width = 380
+    Constraints.MaxWidth = 380
+    Constraints.MinWidth = 380
+    ItemHeight = 20
+    ItemIndex = 2
+    Items.Strings = (
+      'пишущие принадлежности'
+      'принадлежности для черчения'
+      'принадлежности для рисования'
+      'мелкоофисное оборудование'
+      'школьные товары'
+    )
+    TabOrder = 6
+    Text = 'принадлежности для рисования'
+  end
+end
